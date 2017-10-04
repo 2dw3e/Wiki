@@ -8,12 +8,12 @@ body{
 }
 
 img{
-    max-width: 500px;
-    max-height: 150px;
-    min-width: 200px;
-    min-height: 100px;
-    width: 400px;
-    height: 100px;
+    max-width: 200px;
+    max-height: 70px;
+    min-width: 60px;
+    min-height: 30px;
+    width: 130px;
+    height: 30px;
     display: block;
     margin: 0 auto;
 }
@@ -31,7 +31,9 @@ header {
 
 nav {
     background-color: #ff751b;
-    height: 40px;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 nav ul {
@@ -39,45 +41,50 @@ nav ul {
 }
 
 nav li {
-    display: inline;
-    margin: 0%;
-    padding: 0%;
+    display: block;
+    margin: 1%;
+    padding: 1%;
 }
+
 li a:hover{
         animation: ampliar 1s;
 }
 @keyframes ampliar {
     5% {padding:11px;margin: -6px;}
 }
-
 nav a {
     color: #FFF;
     display: inline;
     width: 100%;
     text-align: center;
-    margin: 0%;
+    margin-top: 20%;
     border-radius: 5px;
 }
 
 nav a:hover, nav a:active {
     background-color: grey;
 }
+
 a:hover{
     color: #ff751b;
 }
+
 a{
     color: grey;
     text-decoration:none;
 }
+
 section {
-    display: flex;
-    width: 100%;    
+    width: 100%; 
+    display: inline-block;
 }
 
 article {
     height: 150px;
     min-width: 50%;
     max-width: 80%;
+    font-size: 11px;
+    margin-bottom: 100%;
 }
 
 #art1 {
@@ -85,12 +92,16 @@ article {
     background-color: white;
     height: 150px;
     border: none;
+    margin-bottom: 25%;
 }
 
 aside {
-    padding-left: 2%; 
+    padding-left: 7%; 
     background-color: lightgrey;
     display: inline-block;
+    margin-top: 100%;
+    font-size: 11px;
+    margin-bottom: 25%;
 }
 
 footer {
@@ -104,7 +115,5 @@ footer {
     text-align: right;
     color: #4d4d4d;
     padding: 2%;
-}
-li{
-
+    font-size: 11px;
 }
