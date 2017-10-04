@@ -105,6 +105,29 @@ footer {
     color: #4d4d4d;
     padding: 2%;
 }
+h2, h3, h4, div{
+    font-family: Georgia;
+}
+
+/*.preloader { //loader de carga para enlaces, imagenes etc (probando si funciona)
+  width: 70px;
+  height: 70px;
+  border: 10px solid #eee;
+  border-top: 10px solid #666;
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 li{
 
 }
