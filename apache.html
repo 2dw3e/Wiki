@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Proxmox</title>
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 800px)"  href="CSS/ordenador.css">
+   <link rel="stylesheet" type="text/css" media="only screen and (max-width: 799px)" href="CSS/movil.css">
+</head>
+<body>
+  <div class = "delante_apache">
+    <header>
+      <img src="Imagenes/apache.png">
+    </header>
+    <nav id="apache">
+        <ul>
+          <li><a href="index.html">Proxmox</a></li>
+          <li><a href="server.html">VM Ubuntu Server</a></li>
+          <li><a href="apache.html">Apache</a></li>
+          <li><a href="github.html">Git / GitHub</a></li>
+          <li><a href="controlvs.html">Ctrl vers.</a></li>
+        </ul>
+      </nav>
+      <section>
+        <article id="art1">
+            <h3>Apache</h3>
+            <div>Apache es un poderoso servidor web, es completamente libre, ya que es un software Open Source y con licencia GPL. Una de las ventajas más grandes de Apache, es que es un servidor web multiplataforma, es decir, puede trabajar con diferentes sistemas operativos y mantener su rendimiento.
+            </div>
+            <hr id="apache">
+            <h2>Principales características de Apache</h2>
+            <ul>
+              <li>Soporte de seguridad SSL y TLS.</li>
+              <li>Puede realizar autentificación de datos utilizando SGDB.</li> 
+              <li>Puede dar soporte a diferentes lenguajes, como Perl, PHP, Python y tcl.</li>
+            </ul>
+            <hr id="apache">
+            <h2>Instalación y configuración de Apache</h2>
+          <ol>
+             <li>Abrimos el servidor y ejecutamos el comando apt-get install apache2</li>
+             <li>Ejecutamos el comando service apache2 start para iniciar Apache</li>
+             <li>Si queremos comprobar el estado de Apache, ejecutamos el comando service apache2 status</li>
+             <li>Ejecutamos el comando nano index.html y procedemos a crear la página html</li>
+             <li>Damos a ctrl+o para guardar y ctrl+x para salir</li>
+             <li>El servidor apache está listo y configurado</li>
+          </ol>
+        </article>
+        <aside>
+          <h3>REQUISITOS RECOMENDADOS</h3>
+          <ul>
+            <li>Linux kernel version 2.4 o posterior, glibc2 version 2.3.2 o posterior (inicio con OOo 3.3 glibc2 version 2.5 o mayor) 256 Mbytes RAM (512 MB recomendado)</li>
+            <li>Espacio de disco de 400 Mbytes</li>
+            <li>X-Server con 1024 x 768 o mayor resolucion con 256 colores</li></p>
+          </ul>
+        </aside>
+      </section>
+    <footer id="apache_footer">
+      <h2>Eric Salinas - Iraide Aguilar - Andrea Fernandez Talde 4 &copy2DW3</h2>
+    </footer>
+    </div>
+</body>
+</html>

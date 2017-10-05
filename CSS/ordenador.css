@@ -1,0 +1,166 @@
+* {
+    margin: 0.3em;
+    padding: 0.3em;
+}
+
+body{
+    margin-bottom: 10%;
+}
+
+img{
+    max-width: 500px;
+    max-height: 150px;
+    min-width: 200px;
+    min-height: 100px;
+    width: 400px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+header, nav, article, aside {
+    border: solid black 2px;
+    border-radius: 5px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+header {
+    background-color: grey;
+}
+
+i{
+    font-weight: 900;
+    color: #262626;
+}
+nav {
+    background-color: #ff751b;
+    height: 40px;
+}
+
+#proxmox {
+    background-color: #ff751b;
+}
+
+#server {
+    background-color: #ff471a;
+}
+
+#apache {
+    background-color: #b3003b;
+}
+
+#github {
+    background-color: #4da6ff;
+}
+
+#git {
+    background-color: #e62e00;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0%;
+    padding: 0%;
+}
+li a:hover{
+        animation: ampliar 1s;
+}
+@keyframes ampliar {
+    5% {padding:11px;margin: -6px;}
+}
+
+nav a {
+    color: #FFF;
+    display: inline;
+    width: 100%;
+    text-align: center;
+    margin: 0%;
+    border-radius: 5px;
+}
+
+nav a:hover, nav a:active {
+    background-color: grey;
+}
+a:hover{
+    color: black;
+}
+a{
+    color: grey;
+    text-decoration:none;
+}
+section {
+    display: flex;
+    width: 100%;    
+}
+
+article {
+    height: 150px;
+    min-width: 50%;
+    max-width: 80%;
+}
+
+#art1 {
+    width: 150px;
+    background-color: white;
+    height: 150px;
+    border: none;
+}
+
+aside {
+    padding-left: 2%; 
+    margin-right: 6%;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-bottom: 20%;
+    font-size: 110%;
+
+}
+
+.aside_proxmox {
+    margin-bottom: 0px;
+}
+
+footer {
+    position: fixed;
+    right: -2%;
+    bottom: -3%;
+    left: -2%;
+    text-align: right;
+    color: #4d4d4d;
+    padding: 2%;
+}
+
+#proxmox_footer {
+    background: -webkit-linear-gradient(white, #ff751b);
+    background: -o-linear-gradient(white, #ff751b);
+    background: linear-gradient(white, #ff751b);
+}
+
+#server_footer {
+    background: -webkit-linear-gradient(white, #ff471a);
+    background: -o-linear-gradient(white, #ff471a);
+    background: linear-gradient(white, #ff471a);
+}
+
+#apache_footer {
+    background: -webkit-linear-gradient(white, #b3003b);
+    background: -o-linear-gradient(white, #b3003b);
+    background: linear-gradient(white, #b3003b);
+}
+
+#github_footer {
+    background: -webkit-linear-gradient(white, #4da6ff);
+    background: -o-linear-gradient(white, #4da6ff);
+    background: linear-gradient(white, #4da6ff);
+}
+
+#git_footer {
+    background: -webkit-linear-gradient(white, #e62e00);
+    background: -o-linear-gradient(white, #e62e00);
+    background: linear-gradient(white, #e62e00);
+}

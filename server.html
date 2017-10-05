@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ubuntu Server</title>
+   <link rel="stylesheet" type="text/css" media="only screen and (min-width: 800px)"  href="CSS/ordenador.css">
+   <link rel="stylesheet" type="text/css" media="only screen and (max-width: 799px)" href="CSS/movil.css">
+</head>
+<body>
+  <div class = "delante_server">
+    <header>
+      <img src="Imagenes/ubuntu.png">
+    </header>
+      <nav id="server">
+                <ul>
+          <li><a href="index.html">Proxmox</a></li>
+          <li><a href="server.html">VM Ubuntu Server</a></li>
+          <li><a href="apache.html">Apache</a></li>
+          <li><a href="github.html">Git / GitHub</a></li>
+          <li><a href="controlvs.html">Ctrl vers.</a></li>
+        </ul>
+      </nav>
+      <section>
+        <article id="art1">
+            <h1>Ubuntu Server</h1>
+            <div>Ubuntu Server es una variante de Ubuntu que sale con cada versión y está dedicada especialmente para su uso en servidores. El uso de Ubuntu como servidor se ha extendido mucho en los últimos años, sobretodo para el uso de servidores web, de un modo tanto particular como profesional.
+            </div>
+            <hr id="server">
+            <h2>Creación de un container con Ubuntu Server</h2>
+            <ol>
+              <li>Accedemos a proxmox mediante la web (https://10.9.53.113:8006/).</li>
+              <li>Accedemos con nuestro usuario (root / admin)</li>
+              <li>En almacenamiento local, le damos a ‘Contenido’ y a ‘Plantillas’ * </li>
+              * Si la plantilla que buscamos no está procederemos a instalarla:
+                   <br>
+                   3.1.- Le damos a click derecho en nuestro servidor ‘2dw3e’ y le damos a ‘<_Shell’
+                   <br>
+                   3.2.- Se abrirá la consola del servidor, y ejecutaremos el siguiente comandos:
+                pveam update
+                <br><br>
+              <li>Volvemos a Proxmox y realizamos el paso 3 de nuevo.</li>
+              <li>Seleccionamos la plantilla que queramos y le damos a ‘Descargar’. En nuestro caso hemos instalado ubuntu-17.04-standard_17.04-1_amd64.tar.gz</li>
+              <li>Una vez descargado, en ‘Contenido’ aparecerá nuestra plantilla. Le damos a ‘Crear CT’</li>
+              <li>Rellenamos con los datos que haga falta.</li>
+              <li>Para ver la versión que hemos instalado, le daremos doble click sobre el nombre del container
+              <li>Se abrirá la consola y ejecutaremos el comando lsb_release -a</li>
+              <li>Ahora ejecutamos apt-get update y apt-get upgrade</li>
+              <li>Si queremos realizar por ejemplo un ifconfig, tenemos que instalar net-tools con el comando apt install net-tools</li>
+            </ol>
+        </article>
+        <aside>
+          <h3>REQUISITOS RECOMENDADOS</h3>
+           <ul>
+              <li>Procesador  Procesador x86 a 1 GHz</li>
+              <li>Memoria RAM 1 GB</li>
+              <li>Tarjeta gráfica Super VGA (800 x 600)</li>
+              <li>Espacio en disco  Disco Duro de 15 GB</li>
+              <li>Unidades  Una de las siguientes:Lector de CD-ROM, puerto USB o tarjeta de red.</li>
+              <li>Otros dispositivos  Monitor Super VGA ( resolución 800 x 600 o más), teclado y ratón.La conexión a Internet no es necesaria, pero puede ser útil.</li>
+            </ul>
+        </aside>
+      </section>
+    <footer id="server_footer">
+      <h2>Eric Salinas - Iraide Aguilar - Andrea Fernandez Talde 4 &copy2DW3</h2>
+    </footer>
+    </div>
+</body>
+</html>
