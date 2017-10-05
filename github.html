@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Proxmox</title>
+  <title>Wiki</title>
    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 800px)"  href="CSS/ordenador.css">
    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 799px)" href="CSS/movil.css"> 
 </head>
@@ -22,45 +22,33 @@
         </ul>
       </nav>
       <section>
-        <article id="art1">
+        <article id="art_github">
+            <h1>GitHub</h1>
+            <div>Github es una plataforma creada para facilitar el desarrollo colaborativo de software, permite alojar proyectos en la web gratuitamente, por lo general de forma pública, aunque se puede alojar los proyectos de modo privado, pagando una pequeña suscripción mensual. 
+            </div>
             <hr id="github">
-            <h3>Proxmox</h3>
-            <div>Proxmox es un software de virtualización basado en Debian. Es muy parecido a VMWare, pero en nuestro caso usaremos este software ya que es de código abierto y gratuito, y usaremos Ubuntu como sistema operativo.</div>
-            <div>Link de descarga → <a href=https://www.proxmox.com/en/downloads/item/proxmox-ve-5-0-iso-installer target="_blank">proxmox.com</a></div>
-            <h3>Instalación</h3>
-            <h4>Iniciar el servidor</h4>
-            <div>Para iniciar el servidor, necesitaremos al menos tener un teclado conectado, ya que nos pedirá siempre un usuario y contraseña.</div>
-              <p>Usuario: <b>root</b></p>
-              <p>Contraseña: <b>admin</b></p>
-            <div>
-                <h3>Instalación:</h3>
-            <ul>
-               <li></li>
-            </ul>
-            </div> 
+            <h2>Instalación y configuración de Git</h2>
+               <ol>
+                 <li>Instalamos Git. Para ello ejecutamos el comando <p><i>apt-get install git</i></p></li>
+                 <li>Ahora configuraremos Git:<br>
+                 El primer paso es iniciar Git. Nos situamos en la carpeta donde queramos alojar el proyecto (en nuestro caso /var/www/html) y ejecutamos el comando <p><i>git init</i></p></li>
+                 <li>Ahora le asignamos el repositorio que hemos creado previamente en la página de GitHub. Ejecutamos el comando <p><i>git remote add origin https://github.com/2dw3e/Wiki.git</i></p></li>
+                 <li>Ahora nos identificamos. Ejecutamos el comando <p><i>git config --global user.email 2dw3euskera@gmail.com</i></p></li>
+                 <li>Para subir todos los archivos que hay en la carpeta ejecutamos <p><i>git add.</i></p></li>
+                 <li>Para crear un commit ejecutamos <p><i>git commit -m “nombre”</i></p></li>
+                 <li>Para subir los cambios realizados a GitHub ejecutamos <p><i>git push -u origin master</i></p></li>
+                 <li>Introducimos el usuario y la contraseña de GitHub</li>
+                 <li>Una vez que hayamos hecho algún cambio y lo hayamos subido a GitHubt, si queremos descargar el proyecto completo, en el servidor, ejecutamos <p><i>git pull origin master</i></p></li>
+              </ol>
         </article>
-        <aside>
-          
-               <h3>HARDWARE RECOMENDADO:</h3>
+        <aside class="aside_github">
+          <h3>OBJETIVOS GITHUB</h3>
             <ul>
-               <li>Dual o Quad Socket Server (Quad / Six / Hexa Core CPUs’)</li>
-               <li>CPU: 64 bits (EMT64 Intel o AMD64)</li>
-               <li>Intel VT / AMD-V CPU capaz / Mainboard (para soporte KVM completa de virtualización)</li>
-               <li>8 GB de RAM es bueno, más es mejor (grab tanto como sea posible)</li>
-               <li>Hardware RAID con caché pilas protegido contra escritura (BBU) o la protección de flash</li>
-               <li>Discos duros rápidos y mejores resultados con 15k rpm SAS, RAID 10</li>
-               <li>Dos Gbit NIC (para la vinculación), NIC’s adicionales dependiendo de la tecnología de almacenamiento preferido y configuración del clúster</li>
-               <li>Hardware de Esgrima (sólo es necesario para HA)</li>
+              <li>Saber dónde obtener información sobre git.</li>
+              <li>Conocer el estado e historial de nuestros proyectos.</li>
+              <li>Modificar y recuperar estados anteriores.</li>
+              <li>Solucionar conflictos entre repositorios.</li>
             </ul>
-               <h3>HARDWARE MÍNIMO (sólo para probar)</h3>
-            <ul>
-               <li>Intel VT / AMD-V CPU capaz / Mainboard (para soporte KVM completa de virtualización)</li>
-               <li>CPU: 64 bits (EMT64 Intel o AMD64)</li>
-               <li>Mínimo 1 GB de RAM</li>
-               <li>Unidad de disco duro</li>
-               <li>Una NIC</li>
-            </ul>
-
         </aside>
       </section>
     <footer id="github_footer">

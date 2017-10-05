@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Proxmox</title>
+  <title>Wiki</title>
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 800px)"  href="CSS/ordenador.css">
    <link rel="stylesheet" type="text/css" media="only screen and (max-width: 799px)" href="CSS/movil.css">
 </head>
@@ -22,7 +22,7 @@
         </ul>
       </nav>
       <section>
-        <article id="art1">
+        <article id="art_apache">
             <h3>Apache</h3>
             <div>Apache es un poderoso servidor web, es completamente libre, ya que es un software Open Source y con licencia GPL. Una de las ventajas más grandes de Apache, es que es un servidor web multiplataforma, es decir, puede trabajar con diferentes sistemas operativos y mantener su rendimiento.
             </div>
@@ -36,15 +36,17 @@
             <hr id="apache">
             <h2>Instalación y configuración de Apache</h2>
           <ol>
-             <li>Abrimos el servidor y ejecutamos el comando apt-get install apache2</li>
-             <li>Ejecutamos el comando service apache2 start para iniciar Apache</li>
-             <li>Si queremos comprobar el estado de Apache, ejecutamos el comando service apache2 status</li>
-             <li>Ejecutamos el comando nano index.html y procedemos a crear la página html</li>
-             <li>Damos a ctrl+o para guardar y ctrl+x para salir</li>
-             <li>El servidor apache está listo y configurado</li>
+             <li>Abrimos el servidor y ejecutamos el comando <p><i>apt-get install apache2</i></p></li>
+             <li>Para iniciar Apache ejecutamos el comando <p><i></i>service apache2 start</p></li>
+             <li>Si queremos comprobar el estado de Apache, ejecutamos el comando <p><i>service apache2 status</i></p></li>
+             <li>Procedemos a crear la página html con el comando <p><i>nano index.html</i></p></li>
+             <li>Damos a 
+             <p><i>ctrl+o</i> para guardar</p> 
+             <p><i>ctrl+x</i> para salir</p></li>
+             <li>El servidor Apache está listo y configurado</li>
           </ol>
         </article>
-        <aside>
+        <aside class="aside_apache">
           <h3>REQUISITOS RECOMENDADOS</h3>
           <ul>
             <li>Linux kernel version 2.4 o posterior, glibc2 version 2.3.2 o posterior (inicio con OOo 3.3 glibc2 version 2.5 o mayor) 256 Mbytes RAM (512 MB recomendado)</li>
