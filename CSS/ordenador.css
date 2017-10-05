@@ -105,12 +105,28 @@ article {
     height: 150px;
     min-width: 50%;
     max-width: 80%;
+    width: 150px;
+    border: none;
 }
 
-#art_proxmox, #art_server, #art_apache, #art_github, #art_git {
-    width: 150px;
-    height: 150px;
-    border: none;
+#art_proxmox {
+    margin-bottom: 20%;
+} 
+
+#art_server {
+   
+}
+
+#art_apache{
+
+}
+
+#art_github{
+
+}
+
+#art_git {
+    
 }
 
 aside {
@@ -118,7 +134,6 @@ aside {
     margin-right: 6%;
     background-color: lightgrey;
     display: inline-block;
-    margin-bottom: 20%;
     font-size: 110%;
 
 }
@@ -126,6 +141,19 @@ aside {
 .aside_proxmox {
     margin-bottom: 0px;
 }
+
+.aside_server {
+    margin-bottom: 40%;
+}
+
+.aside_apache {
+    margin-bottom: 31%;
+}
+
+.aside_github {
+    margin-bottom: 45%;
+}
+
 
 footer {
     position: fixed;
